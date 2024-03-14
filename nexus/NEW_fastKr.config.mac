@@ -1,0 +1,18 @@
+
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+/process/em/verbose 0
+
+# GEOMETRY
+/Geometry/NextNew/pressure 10. bar
+/Geometry/NextNew/e_lifetime 10. ms
+
+# GENERATOR
+/Generator/Kr83mGenerator/region ACTIVE
+
+/control/execute macros/physics/IonizationElectron.mac
+
+# PERSISTENCY
+/nexus/persistency/output_file Kr83_fastsim.nexus

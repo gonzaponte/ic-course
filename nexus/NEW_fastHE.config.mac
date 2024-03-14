@@ -1,0 +1,21 @@
+
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+/process/em/verbose 0
+
+# Geometry
+/Geometry/NextNew/pressure 10. bar
+/Geometry/NextNew/e_lifetime 10. ms
+/Geometry/NextNew/max_step_size 1. mm
+
+### Generation
+/Generator/SingleParticle/particle e-
+/Generator/SingleParticle/min_energy 2.5 MeV
+/Generator/SingleParticle/max_energy 2.5 MeV
+/Generator/SingleParticle/region CENTER
+
+/control/execute macros/physics/IonizationElectron.mac
+
+/nexus/persistency/output_file HEe_fastsim.nexus
