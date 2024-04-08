@@ -1,0 +1,26 @@
+
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+/process/em/verbose 0
+
+# Geometry
+/Geometry/NextNew/pressure 10. bar
+/Geometry/NextNew/sc_yield 25510. 1/MeV
+/Geometry/NextNew/e_lifetime 10. ms
+/Geometry/NextNew/EL_field 10 kV/cm
+/Geometry/NextNew/elfield true
+/Geometry/PmtR11410/time_binning 1. nanosecond
+/Geometry/KDB/sipm_time_binning  1. microsecond
+/Geometry/NextNew/max_step_size 1. mm
+
+/PhysicsList/Nexus/photoelectric false
+
+### Generation
+/Generator/SingleParticle/particle e-
+/Generator/SingleParticle/min_energy 2.5 MeV
+/Generator/SingleParticle/max_energy 2.5 MeV
+/Generator/SingleParticle/region CENTER
+
+/nexus/persistency/output_file HEe_fullsim.nexus

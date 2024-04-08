@@ -1,0 +1,24 @@
+
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+/process/em/verbose 0
+
+# GEOMETRY
+/Geometry/NextNew/pressure 10. bar
+/Geometry/NextNew/sc_yield 25510. 1/MeV
+/Geometry/NextNew/e_lifetime 10. ms
+/Geometry/NextNew/EL_field 10 kV/cm
+/Geometry/NextNew/elfield true
+/Geometry/PmtR11410/time_binning 1. nanosecond
+/Geometry/KDB/sipm_time_binning  1. microsecond
+
+/PhysicsList/Nexus/photoelectric false
+/process/optical/processActivation Cerenkov false
+
+# GENERATOR
+/Generator/Kr83mGenerator/region ACTIVE
+
+# PERSISTENCY
+/nexus/persistency/output_file Kr83_fullsim.nexus
